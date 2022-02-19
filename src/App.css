@@ -36,14 +36,27 @@ body {
   text-align: center;
 }
 
-.card img {
-  width: 80px;
+.img-container {
+  height: 100px;
+  overflow: hidden;
+  width: 100px;
+}
+
+.img-container img {
+  height: 100%;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.img-container:hover img {
+  transform: scale(1.1);
 }
 
 .container-missions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
   padding: 10px;
   width: 1000px;
 }
